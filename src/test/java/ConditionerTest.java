@@ -10,11 +10,16 @@ class ConditionerTest {
     @Test
 
     public void shouldInitFields() {
-        Conditioner conditioner = new Conditioner();
+        Conditioner conditioner = new Conditioner(
+                2,
+                "Smoke",
+                34,
+                45,
+                78,
+                false
+        );
 
-        assertEquals("Panasonic", conditioner.getName());
-        assertEquals(25, conditioner.getMaxTemperature());
-        assertEquals(16, conditioner.getMinTemperature());
+        assert
     }
 
 }

@@ -3,12 +3,20 @@ package ru.netology.domain;
 
 public class Conditioner {
     private int id;
-    private String name = "Panasonic";
-    private int currentTemperature = 20;
-    private int maxTemperature = 25;
-    private int minTemperature = 16;
-    private boolean on;
+    private String name = "Vedro";
+    private int currentTemperature = 100;
+    private int maxTemperature = 50;
+    private int minTemperature = 30;
+    private boolean of;
 
+    public Conditioner(int id, String name, int currentTemperature, int maxTemperature, int minTemperature, boolean of) {
+        this.id = id;
+        this.name = name;
+        this.currentTemperature = currentTemperature;
+        this.maxTemperature = maxTemperature;
+        this.minTemperature = minTemperature;
+        this.of = of;
+    }
 
     public int getId() {
         return id;
